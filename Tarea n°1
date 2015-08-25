@@ -15,5 +15,8 @@ int main(){
   }
   int t = sum/cont;
   cout<<t<<endl;
-  return 0
+  return 0;
+  
+  //Aun en edicion... por favor no modificar
+  //Please no modify...in edition
 }
