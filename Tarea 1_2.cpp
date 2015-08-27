@@ -4,8 +4,8 @@
 using namespace std;
 int main(){
   int n;
-  int sum = 0   //La variable "sum" nos dira la suma de las notas
-  int cont = 0  //Este contador nos dira el numero de alumnos
+  int sum = 0;   //La variable "sum" nos dira la suma de las notas
+  int cont = 0;  //Este contador nos dira el numero de alumnos
   while(cin>>n){
     if(n==-1){break;}
     else{
@@ -16,7 +16,4 @@ int main(){
   int t = sum/cont;
   cout<<t<<endl;
   return 0;
-  
-  //Aun en edicion... por favor no modificar
-  //Please no modify...in edition
 }
