@@ -1,0 +1,5 @@
+TExto a presentar en el programa
+lee hasta la ultima linea
+!
+
+fin de archivo
