@@ -1,4 +1,5 @@
 #include <iostream>
+#include "vehicle"
 using namespace std;
 class Truck : public Vehicle {
  string brand;
