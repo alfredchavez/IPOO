@@ -28,4 +28,22 @@ class Stack{
 	 return stack3;
 	      
       }
+      Stack<T>operator-(Stack<T>sb){
+        vector<T>vecb(sb.getContainer());
+        vector<T>veca(container);
+        for(int i=0;i<veca.size();i++){
+            for(int j=0;j<vecb.size();j++){
+                if(veca[i]==vecb[j]){
+                    veca.erase(veca.begin()+i);
+                    i--;
+                    break;
+                }
+            }
+        }
+        Stack<T>s3;
+        for(int i=0;i<veca.size();i++){
+            s3.push(veca[i]);
+        }
+        return s3;
+    }
 };
