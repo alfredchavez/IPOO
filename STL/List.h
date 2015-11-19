@@ -31,4 +31,22 @@
         }
         return list3;
     }
+    List<T>operator-(List<T>listb){
+        vector<T>vecb(listb.getContainer());
+        vector<T>veca(container);
+        for(int i=0;i<veca.size();i++){
+            for(int j=0;j<vecb.size();j++){
+                if(veca[i]==vecb[j]){
+                    veca.erase(veca.begin()+i);
+                    i--;
+                    break;
+                }
+            }
+        }
+        List<T>list3;
+        for(int i=0;i<veca.size();i++){
+            list3.Add_item(veca[i]);
+        }
+        return list3;
+    }
  };
