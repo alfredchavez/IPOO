@@ -37,4 +37,22 @@ public:
         }
         return queue3;
     }
+    Queue<T>operator-(Queue<T>queueb){
+        vector<T>deqb(queueb.getContainer());
+        vector<T>deqa(container);
+        for(int i=0;i<deqa.size();i++){
+            for(int j=0;j<deqb.size();j++){
+                if(deqa[i]==deqb[j]){
+                    deqa.erase(deqa.begin()+i);
+                    i--;
+                    break;
+                }
+            }
+        }
+        Queue<T>q3;
+        for(int i=0;i<deqa.size();i++){
+            q3.push(deqa[i]);
+        }
+        return q3;
+    }
 };
